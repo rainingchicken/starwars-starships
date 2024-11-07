@@ -8,7 +8,7 @@ const Home = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    //special cases, fetching data, timer, DOM
+    //special cases: fetching data, timer, DOM
     document.title = "Star Wars React";
     getAllStarships(setStarShips, setError);
   }, []);
